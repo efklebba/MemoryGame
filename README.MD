@@ -1,6 +1,6 @@
 # Memory Game
 
-Memory Game is card based game where the user must uncover pairs of matching images.
+Memory Game is a card based game where the user must uncover pairs of matching images.
 
 ## Installation
 
