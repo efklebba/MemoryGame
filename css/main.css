@@ -1,0 +1,100 @@
+﻿body
+{
+    --numCol: 4;
+    --numRows: 4;
+    display: flex;
+    flex-direction: column;
+}
+
+#gameHeader {
+    display: flex;
+    justify-content: center;
+}
+
+#gamecontrols {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.controls {
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #808080;
+    background-color: blue;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+    margin: 10px;
+   
+}
+
+.card:hover {
+     cursor: pointer;
+ }
+
+#card-container {
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, green, slateblue);
+    display: grid;
+    grid-template-columns: repeat(var(--numCol), auto);
+    margin: 0 auto;
+    
+    padding: 10px;
+}
+
+/* The background for the modal coversthe entire screen */
+/* From: https://www.w3schools.com/howto/howto_css_modals.asp */
+#congratulations {
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Entire screen width */
+    height: 100%; /* Entire screen height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* The modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+#closeModal {
+    color: #aaa;
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#closeModal:hover,
+#closeModal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 400px) {
+    h3 {
+	font-size: 4vw;
+    }
+}
